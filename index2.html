@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+   <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg"
+alt="Image">
+<script>
+    const image = document.getElementById('image');
+    function toggleVisibility()
+    {
+        if(image.style.display === 'none')
+        {
+            image.style.display = 'block';
+        }
+        else{
+            image.style.display = 'none';
+        }
+    }
+        image.addEventListener('mouseover', toggleVisibility);
+        image.addEventListener('mouseout', toggleVisibility);
+    
+</script>
+</body>
+</html>
